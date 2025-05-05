@@ -517,7 +517,7 @@ def delta_du(from_date: datetime.date, days_delta: int) -> datetime.date:
     datetime.date
         A data calculada do dia útil.
     """
-    # Ajusta a data inicial para o próximo dia útil, se necessário
+    # Ajusta a data inicial para o último dia útil, se necessário
     if not _business_days_default.is_bd(from_date):
         from_date = _business_days_default.last_bd(from_date, raise_error_not_bd=False)
 
