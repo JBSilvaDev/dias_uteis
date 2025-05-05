@@ -19,3 +19,4 @@ ignore_*
 _old*
 .coverage
 htmlcov
+*.ipynb
